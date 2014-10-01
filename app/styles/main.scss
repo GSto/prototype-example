@@ -13,9 +13,15 @@
   padding: 0.2em 0;
 }
 //global
+
+//wireframe fixes
 a {
  color: #333;
  &:hover { text-decoration: underline; }
+}
+
+.button {
+  background-color: #333;
 }
 
 // header
@@ -57,7 +63,7 @@ ul.footer-nav {
     display: inline-block;
   }
   @media screen and (min-width: 768px) {
-    li:not(:first-child) a::before {
+    li:not(:first-child)::before {
       content: "\2014";
       padding-left: 1rem;
       padding-right: 1rem;
@@ -65,7 +71,7 @@ ul.footer-nav {
   }
 
   @media screen and (max-width: 768px) {
-    li:not(:first-child) a::before {
+    li:not(:first-child)::before {
       content: "|";
       color: "#AAA";
       padding-right: 0.5rem;
@@ -85,5 +91,22 @@ ul.footer-nav {
   }
   p {
     margin-bottom: 2rem;
+  }
+}
+
+//contact page
+.contact-page {
+  hr {
+    border: none;
+    color: #333;
+    background-color: #333;
+    height: 0.5rem;
+  }
+  textarea {
+    height: 10rem;
+  }
+
+  h5 {
+    margin-bottom: 0rem;
   }
 }

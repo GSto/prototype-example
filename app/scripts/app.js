@@ -25,6 +25,15 @@ angular
       .when('/about', {
         templateUrl: 'views/about.html'
       })
+      .when('/terms-of-service', {
+        templateUrl: 'views/terms-of-service.html'
+      })
+      .when('/privacy-policy', {
+        templateUrl: 'views/privacy-policy.html'
+      })
+      .when('/contact',  {
+        templateUrl: 'views/contact.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
