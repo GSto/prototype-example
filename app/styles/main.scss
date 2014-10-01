@@ -20,8 +20,9 @@ a {
 
 // header
 header {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     padding-bottom: 1rem;
+    padding-top: 1rem;
     border-bottom: 1px solid #CCC;
 }
 
@@ -69,5 +70,20 @@ ul.footer-nav {
       color: "#AAA";
       padding-right: 0.5rem;
     }
+  }
+}
+
+//simple page
+.simple-page {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50rem;
+
+
+  h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+  }
+  p {
+    margin-bottom: 2rem;
   }
 }
