@@ -43,6 +43,14 @@ a {
   }
 }
 
+.sub-nav dd.active a {
+  background-color: #CCC;
+  color: #333;
+  &:hover {
+    background-color: #AAA;
+  }
+}
+
 // header
 header {
     margin-bottom: 1rem;

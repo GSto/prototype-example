@@ -40,6 +40,12 @@ angular
       .when('/expert-login', {
         templateUrl: 'views/expert-login.html'
       })
+      .when('/poster-signup', {
+        templateUrl: 'views/poster-signup.html'
+      })
+      .when('/expert-signup', {
+        templateUrl: 'views/expert-signup.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
