@@ -21,16 +21,23 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container">
+    <div class="off-canvas-wrap" data-offcanvas>
 
-      <header>
-        <div class='row'>
-          <div class='large-3 columns'>
-            <img src='http://placehold.it/400x200&text=LOGO' title='logo' />
-          </div>
+      <div class="inner-wrap">
+     
+          <!-- mobile navigation -->
+          <nav class="tab-bar hide-for-medium-up">
+            <section class="left-small">
+              <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+            </section>
 
-          <div class='large-9 columns'>
-            <ul class='inline-list right nav'>
+            <section class="middle tab-bar-section">
+              ID It
+            </section>
+          </nav>
+
+          <aside class="left-off-canvas-menu">
+            <ul class='off-canvas-list'>
               <li><a href='#'>Home</a></li>
               <li><a href='#parts'>Parts</a></li>
               <li><a href='#about'>About</a></li>
@@ -38,33 +45,57 @@
               <li><a href='#login'>Log in</a></li>
               <li><a href='#signup'>Sign up</a></li>
             </ul>
-          </div>
-        </div>
-        
-      </header>
-      
-      <section>
-        <div ng-view=""></div>
-      </section>
+          </aside>
 
-      <footer>
-        <ul class='footer-nav'>
-          <li><a href='#terms-of-service'>Terms of Service</a></li>
-          <li><a href='#privacy-policy'>Privacy Policy</a></li>
-          <li><a href='#about'>About</a></li>
-          <li><a href='#contact'>Contact</a></li>
-          <li><a href='#log-in-partner'>Partner Log In</a></li>
-          <li><a href='#log-in-expert'>Expert Log In</a></li>
-        </ul>
+          <section class='main-section'>
 
-        <ul class='text-center footer-nav'> 
-          <li><a href='#'>&copy; 2014 ID It LLC</a></li>
-          <li><a href='http://concordant.solutions'>concordant.solutions</a></li>
-        </ul>
-      </footer>
+            <!-- desktop navigation -->
+            <header>
+              <div class='row'>
+                <div class='large-3 medium-6 hide-for-small medium-centered large-uncentered columns'>
+                  <img src='http://placehold.it/400x200&text=LOGO' title='logo' />
+                </div>
+                
+                <div class='large-9 medium-6 medium-centered large-uncentered columns show-for-medium-up'>
+                  <ul class='inline-list right nav'>
+                    <li><a href='#'>Home</a></li>
+                    <li><a href='#parts'>Parts</a></li>
+                    <li><a href='#about'>About</a></li>
+                    <li><a href='#contact'>Contact</a></li>
+                    <li><a href='#login'>Log in</a></li>
+                    <li><a href='#signup'>Sign up</a></li>
+                  </ul>
+                </div>
+              </div>
+              
+            </header>
+            
+            <!-- primary view -->
+            <section class='main-content'>
+              <div ng-view=""></div>
+            </section>
+            
+            <footer>
+              <ul class='footer-nav'>
+                <li><a href='#terms-of-service'>Terms of Service</a></li>
+                <li><a href='#privacy-policy'>Privacy Policy</a></li>
+                <li><a href='#about'>About</a></li>
+                <li><a href='#contact'>Contact</a></li>
+                <li><a href='#log-in-partner'>Partner Log In</a></li>
+                <li><a href='#log-in-expert'>Expert Log In</a></li>
+              </ul>
+              
+              <ul class='text-center footer-nav'> 
+                <li><a href='#'>&copy; 2014 ID It LLC</a></li>
+                <li><a href='http://concordant.solutions'>concordant.solutions</a></li>
+              </ul>
+            </footer>
+          </section>
 
+          <a class="exit-off-canvas"></a>
+      </div>    
     </div>
-
+    
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -102,10 +133,13 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <!-- endbuild -->
+
+    <script>
+      $(document).foundation();
+    </script>
 </body>
 </html>
