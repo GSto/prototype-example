@@ -34,6 +34,12 @@ angular
       .when('/contact',  {
         templateUrl: 'views/contact.html'
       })
+      .when('/poster-login', {
+        templateUrl: 'views/poster-login.html'
+      })
+      .when('/expert-login', {
+        templateUrl: 'views/expert-login.html'
+      })
       .otherwise({
         redirectTo: '/'
       });

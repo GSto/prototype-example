@@ -17,6 +17,13 @@
 
 p { margin-bottom: 2rem; }
 
+hr.thick-line {
+    border: none;
+    color: #333;
+    background-color: #333;
+    height: 0.5rem;
+}
+
 //wireframe fixes
 a {
  color: #333;
@@ -125,12 +132,7 @@ ul.footer-nav {
 
 //contact page
 .contact-page {
-  hr {
-    border: none;
-    color: #333;
-    background-color: #333;
-    height: 0.5rem;
-  }
+
   textarea {
     height: 10rem;
   }
