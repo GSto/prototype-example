@@ -8,10 +8,14 @@
  * Controller of the iditWireframesApp
  */
 angular.module('iditWireframesApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('mainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
+
+    $scope.range = function(n) {
+      return new Array(n);
+    }
   });

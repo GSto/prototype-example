@@ -51,6 +51,11 @@ a {
   }
 }
 
+ul.pagination li.current a {
+  background: #333;
+  &:hover { background: #666; }
+}
+
 // header
 header {
     margin-bottom: 1rem;
@@ -152,5 +157,28 @@ ul.footer-nav {
   }
   .social-icons {
     margin-top: -0.5rem;
+  }
+}
+
+.parts-page {
+  .part-listing {
+    position: relative;
+    img {
+
+    }
+    .description {
+      position: absolute;
+      background: rgba(51,51,51,0.7);
+      width: 235px;
+      bottom: 1.1rem;
+      z-index: 2;
+      .part-title {
+        color: #FFF;
+        line-height: 2.5rem;
+        padding: 0.5rem;
+        width: 100%;
+        &:hover { background: transparent; }
+      }
+    }
   }
 }

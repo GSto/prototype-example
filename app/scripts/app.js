@@ -22,6 +22,9 @@ angular
       .when('/', {
         templateUrl: 'views/main.html'
       })
+      .when('/parts', {
+        templateUrl: 'views/parts.html'
+      })
       .when('/about', {
         templateUrl: 'views/about.html'
       })
