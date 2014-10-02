@@ -160,6 +160,7 @@ ul.footer-nav {
   }
 }
 
+//parts listing page
 .parts-page {
   .part-listing {
     position: relative;
@@ -181,4 +182,17 @@ ul.footer-nav {
       }
     }
   }
+}
+
+//parts profile page
+
+.part-images {
+ border-right: 0.5rem solid #333;
+}
+.quote {
+ border-bottom: 1px solid #CCC;
+ margin-bottom: 0.5rem;
+ &:not(:first-child) {
+     padding-top: 1rem;
+ }
 }

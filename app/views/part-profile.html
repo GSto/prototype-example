@@ -1,0 +1,60 @@
+<section class='part-profile-page'>
+  <div class='row'>
+    <div class='large-6 columns part-images'>
+      <ul class='large-block-grid-1'>
+        <li>
+          <img src='http://placehold.it/450x450' />
+        </li>
+      </ul>
+      <ul class='large-block-grid-4 part-sub-images'>
+        <li  ng-repeat='i in range(4) track by $index'>
+          <a href=''><img src='http://placehold.it/84x84' /></a>
+        </li>
+      </ul>
+    </div>
+    <div class='large-6 columns part-description'>
+      <h2>Name Of The Part</h2>
+
+      <div class='poster'>
+        <p>
+          <strong>Posted By: John Doe</strong><br/>
+          <span class='subheader'> 95% Acceptance Rate</span>
+        </p>
+      </div>
+      
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales laoreet libero ac finibus. Aliquam erat volutpat. Pellentesque venenatis ligula mauris, sit amet gravida eros fringilla vitae. Maecenas porttitor leo ut libero condimentum congue. Suspendisse mi diam, fringilla eu orci ac, aliquet mattis nisi. Maecenas vitae aliquet elit. In ultricies pretium est, ut mattis felis vehicula at. Nullam dolor nunc, semper at diam nec, rhoncus sagittis mauris.
+      </p>
+
+      <h3>Bounty: $20</h3>
+      <button class='large button'>Submit Quote</button>
+    </div>
+  </div>
+
+  <div class='row'>
+    <div class='large-12 columns'>
+      <h2>Quotes</h2>
+      <hr class='thick-line' />
+      <div class='quote row' ng-repeat='i in range(3) track by $index'>
+        <div class='large-1 columns'>
+          <img src='http://placehold.it/100x100' />
+        </div>
+        <div class='large-8 columns'>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales laoreet libero ac finibus. Aliquam erat volutpat. Pellentesque venenatis ligula mauris, sit amet gravida eros."
+          </p>
+        </div>
+
+        <div class='large-3 columns'>
+          <strong>Estimate:</strong> $500 <br />
+          <strong>Rating:</strong>
+            <i class='fa fa-star'></i>
+            <i class='fa fa-star'></i>
+            <i class='fa fa-star'></i>
+            <i class='fa fa-star-half-full'></i>
+            <i class='fa fa-star-o'></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

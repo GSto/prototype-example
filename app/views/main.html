@@ -20,10 +20,9 @@
   <div class='large-12 columns products'>
     <h3 class='text-center'>Browse Our Products</h3>
     <ul class='large-block-grid-4 medium-block-grid-4 small-block-grid-2'>
-      <li><a href='#parts-profile'><img src='http://placehold.it/400x400'></a></li>
-      <li><a href='#parts-profile'><img src='http://placehold.it/400x400'></a></li>
-      <li><a href='#parts-profile'><img src='http://placehold.it/400x400'></a></li>
-      <li><a href='#parts-profile'><img src='http://placehold.it/400x400'></a></li>
+      <li ng-repeat='i in range(4) track by $index'>
+        <a href='#part-profile'><img src='http://placehold.it/400x400'></a>
+      </li>
     </ul>
     <a class='small right button' href='#parts'>View All Products &raquo;</a>
   </div>

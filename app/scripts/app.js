@@ -25,6 +25,9 @@ angular
       .when('/parts', {
         templateUrl: 'views/parts.html'
       })
+      .when('/part-profile', {
+        templateUrl: 'views/part-profile.html'
+      })
       .when('/about', {
         templateUrl: 'views/about.html'
       })
