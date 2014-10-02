@@ -46,6 +46,9 @@ angular
       .when('/expert-signup', {
         templateUrl: 'views/expert-signup.html'
       })
+      .when('/forgot-password', {
+        templateUrl: 'views/forgot-password.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
