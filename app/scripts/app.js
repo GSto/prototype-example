@@ -22,11 +22,11 @@ angular
       .when('/', {
         templateUrl: 'views/main.html'
       })
-      .when('/parts', {
-        templateUrl: 'views/parts.html'
+      .when('/listings', {
+        templateUrl: 'views/listings.html'
       })
       .when('/part-profile', {
-        templateUrl: 'views/part-profile.html'
+        templateUrl: 'views/listing-profile.html'
       })
       .when('/about', {
         templateUrl: 'views/about.html'
