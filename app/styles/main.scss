@@ -124,40 +124,40 @@ ul.footer-nav {
 
 //home page
 .hero {
-  margin-bottom: 2rem;
-
-  img {
-    position: relative;
-    vertical-align: middle;
-    height: 14rem;
+  background-image: url('http://placehold.it/1600x600');
+  width: 100%;
+  h1 {
+    margin-top: 2rem;
+    text-align: center;
   }
   h2 {
-    position: absolute;
-    left: 0;
     text-align: center;
-    width: 100%;
-    top: 7rem;
-    margin: 0;
-    padding: 0;
-    line-height: 1rem;
-  }
-}
-
-
-//simple page
-.simple-page {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 50rem;
-
-
-  h1,h2,h3,h4,h5,h6 {
-    text-align: center;
-  }
-  p {
     margin-bottom: 2rem;
   }
+  .heading-search {
+    margin-bottom: 4rem;
+  }
 }
+
+.tall-heading {
+  line-height: 6rem;
+}
+
+
+.home-category {
+  h5 { 
+    text-align: center; 
+    font-weight: bold;
+  }
+}
+
+.recent-listing {
+  h5 {
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
 
 //contact page
 .contact-page {
@@ -215,6 +215,3 @@ ul.footer-nav {
  }
 }
 
-.expert-rating i.fa {
-  
-}

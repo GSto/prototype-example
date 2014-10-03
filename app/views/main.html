@@ -1,42 +1,80 @@
-<section class='row'>
+<section class='hero'>
+  <div class='row'>
+    <div class='large-7 large-centered columns'>
+      <h1>Headline About The App</h1>
+      <h2 class='subheader'>Subheading To Explain App</h2>
+      <form class='heading-search'>
+        <div class='row collapse'>
+          <div class='large-10 columns'>
+            <input type='search' placeholder='Search Listings...'/>
+          </div>
+          <div class='large-2 columns'>
+            <button class='button postfix'><i class='fa fa-search'></i></button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
 
-  <div class='large-12 columns hero'>
-    <img src='http://placehold.it/1000x225&text=+'>
-    <h2>"Tagline About The Product"</h2>
+<section class='top-categories'>
+  <div class='row'>
+    <div class='large-6 large-centered columns'>
+      <h3 class='text-center tall-heading'>Top Categories</h3>
+    </div>
   </div>
 
-  <div class='large-12 columns sales-copy'>
-    <h3 class='text-center'>Attention Grabbing Headline</h3>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales laoreet libero ac finibus. Aliquam erat volutpat. Pellentesque venenatis ligula mauris, sit amet gravida eros fringilla vitae. Maecenas porttitor leo ut libero condimentum congue. Suspendisse mi diam, fringilla eu orci ac, aliquet mattis nisi. Maecenas vitae aliquet elit. In ultricies pretium est, ut mattis felis vehicula at. Nullam dolor nunc, semper at diam nec, rhoncus sagittis mauris.
-    </p>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales laoreet libero ac finibus. Aliquam erat volutpat. Pellentesque venenatis ligula mauris, sit amet gravida eros fringilla vitae. Maecenas porttitor leo ut libero condimentum congue. Suspendisse mi diam, fringilla eu orci ac, aliquet mattis nisi. Maecenas vitae aliquet elit. In ultricies pretium est, ut mattis felis vehicula at. Nullam dolor nunc, semper at diam nec, rhoncus sagittis mauris.
-    </p>
-
+  <div class='row'>
+    <div class='large-12 columns'>
+      <ul class='large-block-grid-3'>
+        <li class='home-category' ng-repeat='i in range(6) track by $index'>
+          <a href='#listings'>
+            <img src='http://placehold.it/300x200' />
+          </a>
+          <h5><a href='#listings'>Category Name</a></h5>
+        </li>
+      </ul>
+    </div>
   </div>
 
-  <div class='large-12 columns products'>
-    <h3 class='text-center'>Browse Our Products</h3>
-    <ul class='large-block-grid-4 medium-block-grid-4 small-block-grid-2'>
-      <li ng-repeat='i in range(4) track by $index'>
-        <a href='#part-profile'><img src='http://placehold.it/400x400'></a>
-      </li>
-    </ul>
-    <a class='small right button' href='#parts'>View All Products &raquo;</a>
+</section>
+
+<section class='recent-listings'>
+  <div class='row'>
+    <div class='large-6 large-centered columns'>
+      <h3 class='text-center tall-heading'>Recent Listings</h3>
+    </div>
   </div>
 
-  <div class='large-12 columns sales-copy'>
-    <h3 class='text-center'>Become an Expert</h3>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <ul class='large-block-grid-4'>
+        <li class='recent-listing' ng-repeat='i in range(8) track by $index'>
+          <a href='#listing-profile'>
+            <img src='http://placehold.it/300x200' />
+          </a>
+          <h5><a href='#listing-profile'>Category Name</a></h5>          
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales laoreet libero ac finibus. Aliquam erat volutpat. Pellentesque venenatis ligula mauris, sit amet gravida eros fringilla vitae. Maecenas porttitor leo ut libero condimentum congue. Suspendisse mi diam, fringilla eu orci ac, aliquet mattis nisi. Maecenas vitae aliquet elit. In ultricies pretium est, ut mattis felis vehicula at. Nullam dolor nunc, semper at diam nec, rhoncus sagittis mauris.
-    </p>
+<section class='become-expert'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <h3 class='text-center tall-heading'>Become an Expert</h3>
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales laoreet libero ac finibus. Aliquam erat volutpat.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales laoreet libero ac finibus. Aliquam erat volutpat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sodales laoreet libero ac finibus. Aliquam erat volutpat.
+      </p>
+    </div>
   </div>
 
-  <div class='large-6 large-centered columns'>
-    <button class='large button expand'>Sign Up</button>
+  <div class='row'>
+    <div class='large-8 large-centered columns'>
+      <a href='#expert-signup' class='large expand button'>Sign Up For Expert Account &raquo;</a>
+    </div>
   </div>
-
 </section>
