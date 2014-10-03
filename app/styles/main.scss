@@ -23,7 +23,7 @@ hr.thick-line {
     background-color: #333;
     height: 0.5rem;
 }
-
+//TODO: do this by adjusting Foundation SASS variables
 //wireframe fixes
 a {
  color: #333;
@@ -54,6 +54,11 @@ a {
 ul.pagination li.current a {
   background: #333;
   &:hover { background: #666; }
+}
+
+.label {
+  background-color: #333;
+
 }
 
 // header
@@ -190,9 +195,15 @@ ul.footer-nav {
  border-right: 0.5rem solid #333;
 }
 .quote {
- border-bottom: 1px solid #CCC;
  margin-bottom: 0.5rem;
+ &:not(:last-child) {
+   border-bottom: 1px solid #CCC;
+ }
  &:not(:first-child) {
      padding-top: 1rem;
  }
+}
+
+.expert-rating i.fa {
+  
 }

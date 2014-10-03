@@ -25,7 +25,7 @@ angular
       .when('/listings', {
         templateUrl: 'views/listings.html'
       })
-      .when('/part-profile', {
+      .when('/listing-profile', {
         templateUrl: 'views/listing-profile.html'
       })
       .when('/about', {
