@@ -1,0 +1,5 @@
+{
+  "key" : "ABC123",
+  "secret" : "ABC123",
+  "bucket" : "name-of-the-bucket"
+}

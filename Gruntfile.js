@@ -384,6 +384,25 @@ module.exports = function (grunt) {
         configFile: 'test/karma.conf.js',
         singleRun: true
       }
+    },
+
+    //Deployment Settings
+    aws: grunt.file.readJSON('./grunt-aws.json'),
+    's3-sync' :  {
+      options: {
+        key: '<%= aws.key %>',
+        secret: '<%= aws.secret %>',
+        bucket: '<%= aws.bucket %>'
+      },
+      demo : {
+         files: [
+           { 
+             root: '.',
+             src: 'dist/**',
+             dest: '.',
+           }
+         ]
+      }
     }
   });
 
@@ -431,6 +450,11 @@ module.exports = function (grunt) {
     'filerev',
     'usemin',
     'htmlmin'
+  ]);
+
+  //TODO: once this works, add the build process as well
+  grunt.registerTask('deploy', [
+    's3-sync'
   ]);
 
   grunt.registerTask('default', [

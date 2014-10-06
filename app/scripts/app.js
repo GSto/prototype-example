@@ -55,6 +55,9 @@ angular
       .when('/forgot-password', {
         templateUrl: 'views/forgot-password.html'
       })
+      .when('/poster-dashboard', {
+        templateUrl: 'views/poster-dashboard.html'
+      })
       .otherwise({
         redirectTo: '/'
       });

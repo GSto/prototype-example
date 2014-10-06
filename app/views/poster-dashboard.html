@@ -1,0 +1,105 @@
+<section class='poster-dashboard-page'>
+  <div class='row'>
+    <div class='large-3 columns'>
+      <ul class='side-nav'>
+        <li><strong>Listings</strong></li>
+        <li><a href='#create-listing'>Create Listing</a></li>
+        <li><a href='#listings'>Active Listings</a></li>
+        <li><a href='#archived-listings'>Archived Listings</a></li>
+        <li class='divider'></li>
+
+        <li><strong>Quotes</strong></li>
+        <li><a>Pending Quotes</a></li>
+        <li><a>Accepted Quotes</a></li>
+
+        <li><strong>Settings</strong></li>
+        <li><a>Account Settings</a></li>
+        
+      </ul>
+    </div>
+    <div class='large-9 columns'>
+      <section class='row top-panel'>
+        <div class='panel'>
+          <div class='row'>
+            <div class='large-6 columns'>
+              <h5>You Currently Have <a>4 Active Listings</a></h5>
+            </div>
+            <div class='large-6 columns'>
+              <a href='#create-listing' class='small right button'>Create Listing</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class='row pending-quotes'>
+          
+        <h3 class='large-12 columns'>Pending Quotes</h3>
+        <table class='large-12 columns'>
+          <thead role="grid">
+            <tr>
+              <th>Listing</th>
+              <th>Quote</th>
+              <th>&nbsp;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat='i in range(3) track by $index'>
+              <td><a href='#review-quote'>Listing Title</a></td>
+              <td>
+                Lorem ipsum dolor sit amet, nec mutat urbanitas an, nec laudem recusabo an. Sit novum possim perpetua an, nam quaeque delenit lobortis ex, no quando efficiendi pri.
+              </td>
+              <td>
+                <button class='small button'>Accept</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class='row active-listings'>
+        <h3>Active Listings</h3>
+
+        <ul class='large-block-grid-2'>
+          <li ng-repeat='i in range(4) track by $index'>
+            <div class='row'>
+              <div class='large-4 columns'>
+                <img src='http://placehold.it/300x300' />
+              </div>
+              <div class='large-8 columns'>
+                <h5>Listing Title</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href='#listing-profile'>View &raquo;</a>
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <button class='right button'>View All Active Listings</button>
+      </section>
+
+      <section class='row archived-listings'>
+        <h3>Archived Listings</h3>
+
+        <ul class='large-block-grid-2'>
+          <li ng-repeat='i in range(4) track by $index'>
+            <div class='row'>
+              <div class='large-4 columns'>
+                <img src='http://placehold.it/300x300' />
+              </div>
+              <div class='large-8 columns'>
+                <h5>Listing Title</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href='#listing-profile'>View &raquo;</a>
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <button class='right button'>View All Archived Listings</button>
+      </section>
+
+    </div>
+  </div>
+</section>
