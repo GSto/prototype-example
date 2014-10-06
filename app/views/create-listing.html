@@ -1,0 +1,78 @@
+<section class='create-listing-page'>
+  <div class='row'>
+    <div class='large-6 columns'>
+      <div class='file-upload'>
+        <h5 class='text-center'>Drag Pictures Here to Upload Them</h5>
+      </div>
+      <input type='file' />
+    </div>
+    <div class='large-6 columns create-listing-form'>
+      <form>
+        <div class='row'>
+          <div class='large-12 columns'>
+            <label>Title
+              <input type='text' />
+            </label>
+          </div>
+        </div>
+
+        <div class='row'>
+          <div class='large-12 columns'>
+            <label>Category
+              <select>
+                <optgroup label="Category" ng-repeat="i in range(3) track by $index">
+                  <option>Subcategory</option>
+                  <option>Subcategory</option>
+                  <option>Subcategory</option>
+                </optgroup>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class='row'>
+          <div class='large-12 columns'>
+            <label>
+              History of the Item
+              <textarea></textarea>
+            </label>
+          </div>
+        </div>
+
+        <div class='row'>
+          <div class='large-12 columns'>
+            <label>
+              Item Size
+              <input type='text' />
+            </label>
+          </div>
+        </div>
+
+        <div class='row'>
+          <div class='large-12 columns'>
+            <label>
+              Markings
+              <textarea></textarea>
+            </label>
+          </div>
+        </div>
+        
+        <div class='row'>
+          <div class='large-12 columns'>
+            <label>
+              Bounty
+              <input type='number' min='0' step='5' />
+            </label>
+          </div>
+        </div>
+
+        <div class='row'>
+          <div class='large-12 columns'>
+            <input type='submit' value='Post Listing' class='button' />
+          </div>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+</section>

@@ -224,3 +224,19 @@ ul.footer-nav {
     padding-bottom: 0.5rem;
   }
 }
+
+.create-listing-page {
+  .file-upload {
+    background: #CCC;
+    border: 1px dotted #333;
+    width: 100%;
+    height: 12rem;
+    h5 {
+        margin-top: 5rem;
+    }
+  }
+
+  .create-listing-form {
+      border-left: 0.5rem solid #333;
+  }
+}
