@@ -12,4 +12,61 @@
       <li><a>Public Profile</a></li>
       <li><a>Account Settings</a></li>
     </ul>
+  </div>
+  <div class='large-9 columns'>
+      <section class='row active-listings'>
+        <h3>Listings In Your Expertise</h3>
+
+        <ul class='large-block-grid-2'>
+          <li ng-repeat='i in range(4) track by $index'>
+            <ng-include src=" 'views/partials/listing.html' "></ng-include>
+          </li>
+        </ul>
+
+        <button class='right button'>View All Active Listings</button>
+      </section>
+
+      <section class='row analytics'>
+        <div class='large-5 columns panel text-center'>
+          <h3>$97</h3>
+          <span>In The Past 30 days</span>
+        </div>
+        
+        <div class='large-2 columns'></div>
+        
+        <div class='large-5 columns panel text-center'>
+          <h3>84%</h3>
+          <span>Acceptance Rate</span>
+        </div>
+
+      </section>
+
+
+      <section class='row pending-quotes'>
+          
+        <h3 class='large-12 columns'>Pending Quotes</h3>
+        <table class='large-12 columns'>
+          <thead role="grid">
+            <tr>
+              <th>Listing</th>
+              <th>Quote</th>
+              <th>&nbsp;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat='i in range(3) track by $index'>
+              <td><a href='#review-quote'>Listing Title</a></td>
+              <td>
+                Lorem ipsum dolor sit amet, nec mutat urbanitas an, nec laudem recusabo an. Sit novum possim perpetua an, nam quaeque delenit lobortis ex, no quando efficiendi pri.
+              </td>
+              <td>
+                <button class='small button'>View Listing</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      
+  </div>
+</section>
       
