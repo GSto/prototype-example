@@ -12,7 +12,8 @@
         <li><a>Pending Quotes</a></li>
         <li><a>Accepted Quotes</a></li>
 
-        <li><strong>Settings</strong></li>
+        <li><strong>My Account</strong></li>
+        <li><a href='#poster-dashboard'>Dashboard</a></li>
         <li><a>Account Settings</a></li>
         
       </ul>
@@ -61,17 +62,7 @@
 
         <ul class='large-block-grid-2'>
           <li ng-repeat='i in range(4) track by $index'>
-            <div class='row'>
-              <div class='large-4 columns'>
-                <img src='http://placehold.it/300x300' />
-              </div>
-              <div class='large-8 columns'>
-                <h5>Listing Title</h5>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href='#listing-profile'>View &raquo;</a>
-                </p>
-              </div>
-            </div>
+            <ng-include src=" 'views/partials/listing.html' "></ng-include>
           </li>
         </ul>
 
@@ -83,17 +74,7 @@
 
         <ul class='large-block-grid-2'>
           <li ng-repeat='i in range(4) track by $index'>
-            <div class='row'>
-              <div class='large-4 columns'>
-                <img src='http://placehold.it/300x300' />
-              </div>
-              <div class='large-8 columns'>
-                <h5>Listing Title</h5>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href='#listing-profile'>View &raquo;</a>
-                </p>
-              </div>
-            </div>
+            <ng-include src=" 'views/partials/listing.html' "></ng-include>
           </li>
         </ul>
 
